@@ -1,0 +1,1936 @@
+{
+	"info": {
+		"_postman_id": "b625b2a4-3c79-4169-b95e-b593acb311db",
+		"name": "API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43461066",
+		"_collection_link": "https://hasanabbas-2195904.postman.co/workspace/Hasan-Abbas's-Workspace~1fc0909c-77e2-4b45-8409-34d7447e267d/collection/43461066-b625b2a4-3c79-4169-b95e-b593acb311db?action=share&source=collection_link&creator=43461066"
+	},
+	"item": [
+		{
+			"name": "Location",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{BASE_URL}}/locations",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"locations"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "No locations found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/locations",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"locations"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 Jun 2025 19:52:50 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"No locations found\",\n    \"data\": []\n}"
+						},
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/locations",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"locations"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 Jun 2025 19:59:47 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Success\",\n    \"data\": [\n        {\n            \"id\": \"094219da-5258-4dd2-82d5-7232fb855e17\",\n            \"name\": \"Mall A\",\n            \"created_at\": \"2025-06-13T19:53:55.000000Z\",\n            \"updated_at\": \"2025-06-13T19:53:55.000000Z\"\n        },\n        {\n            \"id\": \"0cfe318f-9847-40eb-80fb-39964f029f93\",\n            \"name\": \"Mall B\",\n            \"created_at\": \"2025-06-13T19:58:20.000000Z\",\n            \"updated_at\": \"2025-06-13T19:58:20.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Store",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Mall B\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/locations",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"locations"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Mall A\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/locations",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"locations"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 Jun 2025 19:53:55 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Location created\",\n    \"data\": {\n        \"name\": \"Mall A\",\n        \"id\": \"094219da-5258-4dd2-82d5-7232fb855e17\",\n        \"updated_at\": \"2025-06-13T19:53:55.000000Z\",\n        \"created_at\": \"2025-06-13T19:53:55.000000Z\"\n    }\n}"
+						},
+						{
+							"name": "Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Mall A\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/locations",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"locations"
+									]
+								}
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 Jun 2025 19:54:46 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"The name has already been taken.\",\n    \"errors\": {\n        \"name\": [\n            \"The name has already been taken.\"\n        ]\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Sensor",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{BASE_URL}}/sensors?status=active&limit=0&page=2",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"sensors"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "active",
+									"description": "active, inactive"
+								},
+								{
+									"key": "limit",
+									"value": "0"
+								},
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success - No sensors found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/sensors",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"sensors"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "active",
+											"description": "active, inactive",
+											"disabled": true
+										},
+										{
+											"key": "limit",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "7",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 Jun 2025 20:07:43 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"No sensor found\",\n    \"data\": []\n}"
+						},
+						{
+							"name": "Success - List All",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/sensors",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"sensors"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "active",
+											"description": "active, inactive",
+											"disabled": true
+										},
+										{
+											"key": "limit",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "7",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 Jun 2025 20:24:58 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Success\",\n    \"data\": [\n        {\n            \"id\": \"0c99877b-68fb-420d-8143-7fef6df5486e\",\n            \"name\": \"Sensor 01\",\n            \"status\": \"active\",\n            \"location_id\": \"094219da-5258-4dd2-82d5-7232fb855e17\",\n            \"created_at\": \"2025-06-13T20:09:13.000000Z\",\n            \"updated_at\": \"2025-06-13T20:09:13.000000Z\"\n        },\n        {\n            \"id\": \"e5ef1a76-64b4-4eab-99f9-dfcb5371a027\",\n            \"name\": \"Sensor 02\",\n            \"status\": \"active\",\n            \"location_id\": \"094219da-5258-4dd2-82d5-7232fb855e17\",\n            \"created_at\": \"2025-06-13T20:13:46.000000Z\",\n            \"updated_at\": \"2025-06-13T20:13:46.000000Z\"\n        },\n        {\n            \"id\": \"5b478e70-7a1f-46da-a865-548e93321cf3\",\n            \"name\": \"Sensor 03\",\n            \"status\": \"active\",\n            \"location_id\": \"094219da-5258-4dd2-82d5-7232fb855e17\",\n            \"created_at\": \"2025-06-13T20:15:05.000000Z\",\n            \"updated_at\": \"2025-06-13T20:15:05.000000Z\"\n        },\n        {\n            \"id\": \"2bc80acb-0d6a-4f15-9627-c1d31ec0d1a1\",\n            \"name\": \"Sensor 04\",\n            \"status\": \"active\",\n            \"location_id\": \"094219da-5258-4dd2-82d5-7232fb855e17\",\n            \"created_at\": \"2025-06-13T20:17:56.000000Z\",\n            \"updated_at\": \"2025-06-13T20:17:56.000000Z\"\n        },\n        {\n            \"id\": \"445109ec-a60e-4346-b31d-7786a45b4af9\",\n            \"name\": \"Sensor 06\",\n            \"status\": \"active\",\n            \"location_id\": \"094219da-5258-4dd2-82d5-7232fb855e17\",\n            \"created_at\": \"2025-06-13T20:19:27.000000Z\",\n            \"updated_at\": \"2025-06-13T20:19:27.000000Z\"\n        },\n        {\n            \"id\": \"a1124d1f-f760-472e-9cbc-db5857010b2f\",\n            \"name\": \"Sensor 07\",\n            \"status\": \"active\",\n            \"location_id\": \"094219da-5258-4dd2-82d5-7232fb855e17\",\n            \"created_at\": \"2025-06-13T20:24:33.000000Z\",\n            \"updated_at\": \"2025-06-13T20:24:33.000000Z\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Success -  List Active Sensors",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/sensors?status=active",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"sensors"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "active",
+											"description": "active, inactive"
+										},
+										{
+											"key": "limit",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "7",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 Jun 2025 20:25:46 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Success\",\n    \"data\": [\n        {\n            \"id\": \"0c99877b-68fb-420d-8143-7fef6df5486e\",\n            \"name\": \"Sensor 01\",\n            \"status\": \"active\",\n            \"location_id\": \"094219da-5258-4dd2-82d5-7232fb855e17\",\n            \"created_at\": \"2025-06-13T20:09:13.000000Z\",\n            \"updated_at\": \"2025-06-13T20:09:13.000000Z\"\n        },\n        {\n            \"id\": \"e5ef1a76-64b4-4eab-99f9-dfcb5371a027\",\n            \"name\": \"Sensor 02\",\n            \"status\": \"active\",\n            \"location_id\": \"094219da-5258-4dd2-82d5-7232fb855e17\",\n            \"created_at\": \"2025-06-13T20:13:46.000000Z\",\n            \"updated_at\": \"2025-06-13T20:13:46.000000Z\"\n        },\n        {\n            \"id\": \"5b478e70-7a1f-46da-a865-548e93321cf3\",\n            \"name\": \"Sensor 03\",\n            \"status\": \"active\",\n            \"location_id\": \"094219da-5258-4dd2-82d5-7232fb855e17\",\n            \"created_at\": \"2025-06-13T20:15:05.000000Z\",\n            \"updated_at\": \"2025-06-13T20:15:05.000000Z\"\n        },\n        {\n            \"id\": \"2bc80acb-0d6a-4f15-9627-c1d31ec0d1a1\",\n            \"name\": \"Sensor 04\",\n            \"status\": \"active\",\n            \"location_id\": \"094219da-5258-4dd2-82d5-7232fb855e17\",\n            \"created_at\": \"2025-06-13T20:17:56.000000Z\",\n            \"updated_at\": \"2025-06-13T20:17:56.000000Z\"\n        },\n        {\n            \"id\": \"445109ec-a60e-4346-b31d-7786a45b4af9\",\n            \"name\": \"Sensor 06\",\n            \"status\": \"active\",\n            \"location_id\": \"094219da-5258-4dd2-82d5-7232fb855e17\",\n            \"created_at\": \"2025-06-13T20:19:27.000000Z\",\n            \"updated_at\": \"2025-06-13T20:19:27.000000Z\"\n        },\n        {\n            \"id\": \"a1124d1f-f760-472e-9cbc-db5857010b2f\",\n            \"name\": \"Sensor 07\",\n            \"status\": \"active\",\n            \"location_id\": \"094219da-5258-4dd2-82d5-7232fb855e17\",\n            \"created_at\": \"2025-06-13T20:24:33.000000Z\",\n            \"updated_at\": \"2025-06-13T20:24:33.000000Z\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Success -  List In Active Sensors",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/sensors?status=inactive",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"sensors"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "inactive",
+											"description": "active, inactive"
+										},
+										{
+											"key": "limit",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "7",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 Jun 2025 20:32:22 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Success\",\n    \"data\": [\n        {\n            \"id\": \"0c99877b-68fb-420d-8143-7fef6df5486e\",\n            \"name\": \"Sensor 01\",\n            \"status\": \"inactive\",\n            \"location_id\": \"094219da-5258-4dd2-82d5-7232fb855e17\",\n            \"created_at\": \"2025-06-13T20:09:13.000000Z\",\n            \"updated_at\": \"2025-06-13T20:09:13.000000Z\"\n        },\n        {\n            \"id\": \"2bc80acb-0d6a-4f15-9627-c1d31ec0d1a1\",\n            \"name\": \"Sensor 04\",\n            \"status\": \"inactive\",\n            \"location_id\": \"094219da-5258-4dd2-82d5-7232fb855e17\",\n            \"created_at\": \"2025-06-13T20:17:56.000000Z\",\n            \"updated_at\": \"2025-06-13T20:17:56.000000Z\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Success - With Pagination",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/sensors?limit=1&page=2",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"sensors"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "inactive",
+											"description": "active, inactive",
+											"disabled": true
+										},
+										{
+											"key": "limit",
+											"value": "1"
+										},
+										{
+											"key": "page",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 Jun 2025 20:33:58 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Success\",\n    \"data\": {\n        \"data\": [\n            {\n                \"id\": \"e5ef1a76-64b4-4eab-99f9-dfcb5371a027\",\n                \"name\": \"Sensor 02\",\n                \"status\": \"active\",\n                \"location_id\": \"094219da-5258-4dd2-82d5-7232fb855e17\",\n                \"created_at\": \"2025-06-13T20:13:46.000000Z\",\n                \"updated_at\": \"2025-06-13T20:13:46.000000Z\"\n            }\n        ],\n        \"meta\": {\n            \"current_page\": 2,\n            \"from\": 2,\n            \"to\": 2,\n            \"per_page\": 1,\n            \"total\": 7,\n            \"last_page\": 7,\n            \"prev_page_url\": \"http://127.0.0.1:8000/api/sensors?page=1\",\n            \"next_page_url\": \"http://127.0.0.1:8000/api/sensors?page=3\"\n        }\n    }\n}"
+						},
+						{
+							"name": "Success - With Pagination & Status",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/sensors?status=active&limit=1&page=2",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"sensors"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "active",
+											"description": "active, inactive"
+										},
+										{
+											"key": "limit",
+											"value": "1"
+										},
+										{
+											"key": "page",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 Jun 2025 20:34:49 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Success\",\n    \"data\": {\n        \"data\": [\n            {\n                \"id\": \"5b478e70-7a1f-46da-a865-548e93321cf3\",\n                \"name\": \"Sensor 03\",\n                \"status\": \"active\",\n                \"location_id\": \"094219da-5258-4dd2-82d5-7232fb855e17\",\n                \"created_at\": \"2025-06-13T20:15:05.000000Z\",\n                \"updated_at\": \"2025-06-13T20:15:05.000000Z\"\n            }\n        ],\n        \"meta\": {\n            \"current_page\": 2,\n            \"from\": 2,\n            \"to\": 2,\n            \"per_page\": 1,\n            \"total\": 5,\n            \"last_page\": 5,\n            \"prev_page_url\": \"http://127.0.0.1:8000/api/sensors?page=1\",\n            \"next_page_url\": \"http://127.0.0.1:8000/api/sensors?page=3\"\n        }\n    }\n}"
+						},
+						{
+							"name": "Error - Validation Error (Status & Limit)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/sensors?status=active1&limit=1a&page=2",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"sensors"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "active1",
+											"description": "active, inactive"
+										},
+										{
+											"key": "limit",
+											"value": "1a"
+										},
+										{
+											"key": "page",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 Jun 2025 22:25:28 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"The selected status is invalid. (and 1 more error)\",\n    \"errors\": {\n        \"status\": [\n            \"The selected status is invalid.\"\n        ],\n        \"limit\": [\n            \"The limit field must be an integer.\"\n        ]\n    }\n}"
+						},
+						{
+							"name": "Error - Validation Error Limit Field",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/sensors?status=active&limit=0&page=2",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"sensors"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "active",
+											"description": "active, inactive"
+										},
+										{
+											"key": "limit",
+											"value": "0"
+										},
+										{
+											"key": "page",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 Jun 2025 22:28:51 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"The limit field must be at least 1.\",\n    \"errors\": {\n        \"limit\": [\n            \"The limit field must be at least 1.\"\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Store",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Sensor 07\",\r\n    \"status\": \"active\",\r\n    \"location_id\": \"094219da-5258-4dd2-82d5-7232fb855e17\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/sensors",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"sensors"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Sensor 08\",\r\n    \"status\": \"active\",\r\n    \"location_id\": \"094219da-5258-4dd2-82d5-7232fb855e17\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/sensors",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"sensors"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 Jun 2025 20:24:33 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Sensor created\",\n    \"data\": {\n        \"id\": \"a1124d1f-f760-472e-9cbc-db5857010b2f\",\n        \"name\": \"Sensor 07\",\n        \"status\": \"active\",\n        \"location_id\": \"094219da-5258-4dd2-82d5-7232fb855e17\",\n        \"created_at\": \"2025-06-13T20:24:33.000000Z\",\n        \"updated_at\": \"2025-06-13T20:24:33.000000Z\"\n    }\n}"
+						},
+						{
+							"name": "Error - Duplicate Name",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Sensor 06\",\r\n    \"status\": \"active\",\r\n    \"location_id\": \"094219da-5258-4dd2-82d5-7232fb855e17\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/sensors",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"sensors"
+									]
+								}
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 Jun 2025 20:20:02 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"The name has already been taken for this location.\",\n    \"errors\": {\n        \"name\": [\n            \"The name has already been taken for this location.\"\n        ]\n    }\n}"
+						},
+						{
+							"name": "Error - Status Invalid",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Sensor 06\",\r\n    \"status\": \"active32\",\r\n    \"location_id\": \"094219da-5258-4dd2-82d5-7232fb855e17\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/sensors",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"sensors"
+									]
+								}
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 Jun 2025 20:23:25 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"The selected status is invalid. (and 1 more error)\",\n    \"errors\": {\n        \"status\": [\n            \"The selected status is invalid.\"\n        ],\n        \"name\": [\n            \"The name has already been taken for this location.\"\n        ]\n    }\n}"
+						},
+						{
+							"name": "Error - Invalid Location ID",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Sensor 06\",\r\n    \"status\": \"active\",\r\n    \"location_id\": \"094219da-5258-4dd2-82d5-7232fb855e172\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/sensors",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"sensors"
+									]
+								}
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 Jun 2025 20:24:03 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"The location id field must be a valid UUID.\",\n    \"errors\": {\n        \"location_id\": [\n            \"The location id field must be a valid UUID.\"\n        ]\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Visitor",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{BASE_URL}}/visitors?date=2025-06-18",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"visitors"
+							],
+							"query": [
+								{
+									"key": "date",
+									"value": "2025-06-18"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success - No Visitor Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/visitors",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"visitors"
+									],
+									"query": [
+										{
+											"key": "date",
+											"value": "2025-06-04",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 Jun 2025 20:37:31 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"No visitors found\",\n    \"data\": []\n}"
+						},
+						{
+							"name": "Success - All Data",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/visitors",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"visitors"
+									],
+									"query": [
+										{
+											"key": "date",
+											"value": "2025-06-04",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 Jun 2025 22:37:38 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Success\",\n    \"data\": [\n        {\n            \"id\": \"3aada822-886c-4d51-a52b-4ee577275705\",\n            \"location_id\": \"094219da-5258-4dd2-82d5-7232fb855e17\",\n            \"sensor_id\": \"5b478e70-7a1f-46da-a865-548e93321cf3\",\n            \"date\": \"2025-06-18\",\n            \"count\": 23,\n            \"created_at\": \"2025-06-13T22:33:49.000000Z\",\n            \"updated_at\": \"2025-06-13T22:33:49.000000Z\"\n        },\n        {\n            \"id\": \"04aeefb8-544c-4f30-8afe-570267f7e177\",\n            \"location_id\": \"094219da-5258-4dd2-82d5-7232fb855e17\",\n            \"sensor_id\": \"5b478e70-7a1f-46da-a865-548e93321cf3\",\n            \"date\": \"2025-06-19\",\n            \"count\": 23,\n            \"created_at\": \"2025-06-13T22:34:01.000000Z\",\n            \"updated_at\": \"2025-06-13T22:34:01.000000Z\"\n        },\n        {\n            \"id\": \"38105eca-1600-47cf-9491-646acb072478\",\n            \"location_id\": \"094219da-5258-4dd2-82d5-7232fb855e17\",\n            \"sensor_id\": \"5b478e70-7a1f-46da-a865-548e93321cf3\",\n            \"date\": \"2025-06-26\",\n            \"count\": 23,\n            \"created_at\": \"2025-06-13T22:36:31.000000Z\",\n            \"updated_at\": \"2025-06-13T22:36:31.000000Z\"\n        },\n        {\n            \"id\": \"0de194bc-5ad8-498b-9095-85cd92807332\",\n            \"location_id\": \"094219da-5258-4dd2-82d5-7232fb855e17\",\n            \"sensor_id\": \"5b478e70-7a1f-46da-a865-548e93321cf3\",\n            \"date\": \"2025-06-29\",\n            \"count\": 23,\n            \"created_at\": \"2025-06-13T22:37:25.000000Z\",\n            \"updated_at\": \"2025-06-13T22:37:25.000000Z\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Success - Filtered Data",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/visitors?date=2025-06-18",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"visitors"
+									],
+									"query": [
+										{
+											"key": "date",
+											"value": "2025-06-18"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 Jun 2025 22:38:34 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Success\",\n    \"data\": [\n        {\n            \"id\": \"3aada822-886c-4d51-a52b-4ee577275705\",\n            \"location_id\": \"094219da-5258-4dd2-82d5-7232fb855e17\",\n            \"sensor_id\": \"5b478e70-7a1f-46da-a865-548e93321cf3\",\n            \"date\": \"2025-06-18\",\n            \"count\": 23,\n            \"created_at\": \"2025-06-13T22:33:49.000000Z\",\n            \"updated_at\": \"2025-06-13T22:33:49.000000Z\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Error - Validation Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{BASE_URL}}/visitors?date=2025-06-18a",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"visitors"
+									],
+									"query": [
+										{
+											"key": "date",
+											"value": "2025-06-18a"
+										}
+									]
+								}
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 Jun 2025 22:42:51 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"The date field must match the format Y-m-d.\",\n    \"errors\": {\n        \"date\": [\n            \"The date field must match the format Y-m-d.\"\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Store",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sensor_id\": \"5b478e70-7a1f-46da-a865-548e93321cf3\",\r\n    \"date\": \"2025-06-29\",\r\n    \"count\": 23\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/visitors",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"visitors"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"sensor_id\": \"5b478e70-7a1f-46da-a865-548e93321cf3\",\r\n    \"date\": \"2025-06-19\",\r\n    \"count\": 23\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/visitors",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"visitors"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 Jun 2025 22:34:01 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Visitor created\",\n    \"data\": {\n        \"id\": \"04aeefb8-544c-4f30-8afe-570267f7e177\",\n        \"location_id\": \"094219da-5258-4dd2-82d5-7232fb855e17\",\n        \"sensor_id\": \"5b478e70-7a1f-46da-a865-548e93321cf3\",\n        \"date\": \"2025-06-19\",\n        \"count\": 23,\n        \"created_at\": \"2025-06-13T22:34:01.000000Z\",\n        \"updated_at\": \"2025-06-13T22:34:01.000000Z\"\n    }\n}"
+						},
+						{
+							"name": "Error - Validation Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"sensor_id\": \"5b478e70-7a1f-46da-a865-548e93321cf\",\r\n    \"date\": \"2025-06-19a\",\r\n    \"count\": \"23a\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/visitors",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"visitors"
+									]
+								}
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 Jun 2025 22:35:06 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"The sensor id field must be a valid UUID. (and 2 more errors)\",\n    \"errors\": {\n        \"sensor_id\": [\n            \"The sensor id field must be a valid UUID.\"\n        ],\n        \"date\": [\n            \"The date field must match the format Y-m-d.\"\n        ],\n        \"count\": [\n            \"The count field must be an integer.\"\n        ]\n    }\n}"
+						},
+						{
+							"name": "Error - Date Already Taken",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"sensor_id\": \"5b478e70-7a1f-46da-a865-548e93321cf3\",\r\n    \"date\": \"2025-06-26\",\r\n    \"count\": 23\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/visitors",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"visitors"
+									]
+								}
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 Jun 2025 22:35:57 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"The date has already been taken.\",\n    \"errors\": {\n        \"date\": [\n            \"The date has already been taken.\"\n        ]\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Summary",
+			"item": [
+				{
+					"name": "Fetch",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{BASE_URL}}/summary",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"summary"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/summary",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"summary"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.14"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 Jun 2025 20:39:03 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Success\",\n    \"data\": {\n        \"total_visitors_last_7_days\": 0,\n        \"sensor_stats\": {\n            \"active\": 0,\n            \"inactive\": 0\n        }\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "http://localhost:8000/api",
+			"type": "string"
+		}
+	]
+}
